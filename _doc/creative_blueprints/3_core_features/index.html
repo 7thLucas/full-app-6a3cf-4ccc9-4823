@@ -1,36 +1,60 @@
 <style>
-  .mode-landscape .sl-metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
-  .mode-portrait .sl-metrics-grid { display: flex; flex-direction: column; gap: 1rem; }
+  .mode-landscape .sl-features-layout { display: flex; flex-direction: column; height: 100%; }
+  .mode-landscape .sl-features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .mode-portrait .sl-features-layout { display: flex; flex-direction: column; height: 100%; }
+  .mode-portrait .sl-features-grid { display: flex; flex-direction: column; gap: 0.75rem; }
 </style>
 <section class="w-full h-full overflow-auto bg-white p-10">
-  <div class="flex items-center gap-3 mb-2">
-    <span class="text-xs font-bold tracking-widest uppercase" style="color:#0066CC;">Outcomes</span>
-  </div>
-  <h2 class="text-4xl font-bold text-slate-900 mb-6">Quantifiable Benefits</h2>
-  <p class="text-lg text-slate-600 mb-10 max-w-3xl">Halo delivers measurable impact by eliminating communication silos and accelerating decision velocity across teams.</p>
-  <div class="sl-metrics-grid mb-12"><article class="flex-1 min-w-[200px] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-        <h3 class="text-3xl font-bold leading-none mb-2" style="color:#0066CC;">60%</h3>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-2">Reduction in context-switching overhead</h4>
-        <p class="text-slate-600 text-sm leading-relaxed">Teams spend less time jumping between platforms and more time on high-value work</p>
-      </article>
-      <article class="flex-1 min-w-[200px] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-        <h3 class="text-3xl font-bold leading-none mb-2" style="color:#0066CC;">3.5x</h3>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-2">Faster decision cycles</h4>
-        <p class="text-slate-600 text-sm leading-relaxed">Centralized context and persistent memory enable teams to move faster with confidence</p>
-      </article>
-      <article class="flex-1 min-w-[200px] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-        <h3 class="text-3xl font-bold leading-none mb-2" style="color:#0066CC;">85%</h3>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-2">Improvement in cross-team visibility</h4>
-        <p class="text-slate-600 text-sm leading-relaxed">Everyone sees the full picture of what&#x27;s being worked on and why</p>
-      </article></div>
-  <div class="rounded-2xl p-8" style="background-color:#00D9FF;">
-    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
-      <div class="flex-1">
-        <h3 class="text-sm font-bold uppercase tracking-widest text-white/70 mb-2">Primary ROI</h3>
-        <p class="text-4xl font-black text-white">47% faster project delivery</p>
+  <div class="sl-features-layout">
+    <div class="flex items-center justify-between mb-3">
+      <p class="text-xs font-bold tracking-widest uppercase" style="color:#9E6752;">Fitur Utama</p>
+      <div class="flex gap-2">
+        <span class="px-3 py-1 rounded-full text-xs font-bold border-2" style="border-color:#9E6752; color:#9E6752; background-color:white;">Kasir</span>
+        <span class="px-3 py-1 rounded-full text-xs font-bold text-white" style="background-color:#2D4354;">Owner</span>
       </div>
-      <div class="flex-[2] text-white/90 text-xl leading-relaxed font-medium border-l-0 md:border-l border-white/20 md:pl-8">
-        Based on average implementation data across customer baseline metrics
+    </div>
+    <h1 class="text-3xl font-black leading-tight mb-2" style="color:#20212B;">Sesederhana Kalkulator.<br/>Sepintar Akuntan.</h1>
+    <p class="text-sm leading-relaxed mb-6" style="color:#534145; max-width:640px;">Empat fitur inti yang bekerja bersama — dari input transaksi hingga laporan profit dan daftar belanja otomatis.</p>
+    <div class="sl-features-grid flex-1">
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color:#FED7A5;">
+        <div class="flex items-center gap-3 mb-1">
+          <div class="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style="background-color:#9E6752;">
+            <svg class="w-4 h-4" fill="none" stroke="white" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 11h.01M12 11h.01M15 11h.01M4 19h16a2 2 0 002-2V7a2 2 0 00-2-2H4a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="font-black text-base" style="color:#20212B;">Calculator-First UI</h3>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#534145;">Layar utama = numpad besar. Kasir ketuk angka → pilih chip kategori atau tombol nama menu (e.g. "Nasi Goreng"). Nol pelatihan, nol bingung.</p>
+        <span class="mt-auto text-xs font-semibold px-2 py-0.5 rounded-full self-start" style="background-color:#9E6752; color:white;">Kasir</span>
+      </div>
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color:#FED7A5;">
+        <div class="flex items-center gap-3 mb-1">
+          <div class="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style="background-color:#2D4354;">
+            <svg class="w-4 h-4" fill="none" stroke="white" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+          </div>
+          <h3 class="font-black text-base" style="color:#20212B;">Recipe-Based Auto Deduct</h3>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#534145;">Owner konfigurasi resep: 1 Nasi Goreng = −50gr ayam + −1 telur. Setiap transaksi kasir memotong stok bahan baku secara otomatis di background.</p>
+        <span class="mt-auto text-xs font-semibold px-2 py-0.5 rounded-full self-start" style="background-color:#2D4354; color:white;">Owner Setup</span>
+      </div>
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color:#73766A;">
+        <div class="flex items-center gap-3 mb-1">
+          <div class="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style="background-color:#20212B;">
+            <svg class="w-4 h-4" fill="none" stroke="white" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <h3 class="font-black text-base" style="color:white;">1-Click Closing + PDF</h3>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#FED7A5;">Satu tap Closing → PDF instan: total pemasukan gross, pengeluaran, menu terjual, dan Smart Shopping List (bahan habis/kritis). Siap di-share ke WhatsApp.</p>
+        <span class="mt-auto text-xs font-semibold px-2 py-0.5 rounded-full self-start" style="background-color:#FED7A5; color:#20212B;">Kasir · Owner</span>
+      </div>
+      <div class="rounded-2xl p-5 flex flex-col gap-2" style="background-color:#73766A;">
+        <div class="flex items-center gap-3 mb-1">
+          <div class="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style="background-color:#9E6752;">
+            <svg class="w-4 h-4" fill="none" stroke="white" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          </div>
+          <h3 class="font-black text-base" style="color:white;">RBAC + Offline-First PWA</h3>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#FED7A5;">Kasir tidak pernah lihat HPP atau margin. Owner akses via PIN. Berjalan penuh tanpa internet (browser storage) — sinkron saat koneksi stabil.</p>
+        <span class="mt-auto text-xs font-semibold px-2 py-0.5 rounded-full self-start" style="background-color:#9E6752; color:white;">PIN Protected</span>
       </div>
     </div>
   </div>
