@@ -1,27 +1,24 @@
 <style>
   .mode-landscape .sl-cover-layout { display: flex; flex-direction: row; align-items: stretch; min-height: 100%; }
-  .mode-landscape .sl-content-panel { width: 55%; display: flex; flex-direction: column; justify-content: center; }
+  .mode-landscape .sl-content-panel { width: 55%; display: flex; flex-direction: column; justify-content: center; padding: 3rem 2.5rem; }
   .mode-landscape .sl-image-panel { width: 45%; min-height: 0; }
   .mode-portrait .sl-cover-layout { display: flex; flex-direction: column; min-height: 100%; }
-  .mode-portrait .sl-content-panel { flex: 1; display: flex; flex-direction: column; justify-content: center; padding-bottom: 1.5rem; }
-  .mode-portrait .sl-image-panel { min-height: 280px; flex-shrink: 0; }
+  .mode-portrait .sl-content-panel { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 2rem 1.5rem; }
+  .mode-portrait .sl-image-panel { min-height: 260px; flex-shrink: 0; }
 </style>
 <section class="w-full h-full overflow-auto bg-white">
   <div class="sl-cover-layout h-full">
-    <div class="sl-content-panel px-10 py-12">
+    <div class="sl-content-panel">
       <div class="flex flex-col justify-between h-full">
         <div>
-          <p class="text-sm font-medium tracking-widest uppercase mb-6" style="color:#0066CC;">Product Manager</p>
-          <h1 class="text-5xl font-bold text-slate-900 leading-tight mb-6">Halo</h1>
-          <p class="text-xl text-slate-600 leading-relaxed max-w-md mb-6">Unified collaboration that brings your entire team into focus</p>
-          <div class="inline-flex items-center gap-3 border rounded-lg px-4 py-3" style="background-color:#00D9FF; border-color:#0066CC40;">
-            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#0066CC;">
-              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-              </svg>
-            </div>
-            <span class="text-sm font-medium px-1" style="color:#ffffff;">Core vision: Simplified productivity</span>
-
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-8" style="background-color:#FED7A5;">
+            <span class="text-xs font-bold tracking-widest uppercase" style="color:#9E6752;">F&amp;B UMKM · Internal POS</span>
+          </div>
+          <h1 class="text-5xl font-black leading-tight mb-5" style="color:#20212B;">Tahu Untung<br/>Hari Ini.<br/>Bukan Akhir<br/>Bulan.</h1>
+          <p class="text-lg leading-relaxed mb-8" style="color:#534145; max-width:380px;">Sistem Reverse-Procurement POS yang menyamar sebagai kalkulator — untuk warung dan UMKM F&amp;B Indonesia.</p>
+          <div class="inline-flex items-center gap-3 px-4 py-3 rounded-xl" style="background-color:#9E6752;">
+            <svg class="w-4 h-4" fill="none" stroke="white" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 11h.01M12 11h.01M15 11h.01M4 19h16a2 2 0 002-2V7a2 2 0 00-2-2H4a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span class="text-sm font-semibold text-white">Catat · Hitung · Laporan Otomatis</span>
           </div>
         </div>
         <div class="mt-auto pt-8">
@@ -30,9 +27,9 @@
       </div>
     </div>
     <div class="sl-image-panel relative overflow-hidden">
-      <div class="absolute inset-0" style="background:linear-gradient(135deg, #0066CC, #0066CC20);"></div>
+      <div class="absolute inset-0" style="background:linear-gradient(135deg, #FED7A5 0%, #9E675215 100%);"></div>
       <div class="absolute inset-0 flex items-center justify-center p-8">
-        <img src="http://localhost:8001/common/image-generation?prompt=abstract+light+halo+glowing+rings+collaboration+teamwork+modern+minimal&amp;keyspace=nrj86wl4&amp;user_id=4823" alt="cover" class="max-w-full max-h-full object-contain drop-shadow-2xl rounded-2xl" />
+        <img src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=cozy+Indonesian+warung+food+stall+interior+warm+lighting+cashier+counter+organic+earthy+colors+bokeh+professional+food+photography+inviting" alt="CatatAja" class="max-w-full max-h-full object-contain drop-shadow-2xl rounded-2xl" />
       </div>
     </div>
   </div>
